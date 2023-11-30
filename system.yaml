@@ -1,0 +1,62 @@
+# /system.yaml
+
+repo: 'https://pkg-repo.blendos.co/' # this is where you put the blendos repo
+
+impl: 'https://github.com/blend-os/tracks/raw/main' # the repo for their systems that you want to install like "xfce", "gnome", "plasma", etc..
+
+track: 'xfce' # this is what I used for the base
+
+packages:  # programs that are put into the system
+
+- 'ly'
+- 'i3'
+- 'i3lock'
+- 'i3status'
+- 'dmenu'
+- 'rofi'
+- 'chromium'
+- 'xfce4-goodies'
+- 'vim'
+- 'volumeicon'
+- 'git'
+- 'wget'
+- 'curl'
+- 'linux-lts'
+- 'linux-lts-headers'
+- 'nitrogen'
+- 'feh'
+- 'arandr'
+- 'jgmenu'
+- 'pulseaudio'
+- 'pavucontrol'
+- 'picom'
+- 'pasystray'
+- 'ttf-terminus-nerd'
+- 'terminus-font'
+- 'lxappearance'
+- 'wireplumber'
+- 'zsh'
+- 'neofetch'
+- 'zsh-syntax-highlighting'
+- 'zsh-completions'
+- 'starship'
+- 'papirus-icon-theme'
+- 'flatpak'
+- 'vlc'
+- 'dunst'
+- 'brightnessctl'
+- 'neovim'
+
+services: # these are what you input in the system:  An exanple would be like when you use "systemctl enable" & "systemctl start".  This is done automatically once its there in your system.
+- 'caddy'
+- 'NetworkManager'
+- 'ly'
+- 'starship'
+- 'flatpak'
+
+packages-repo: # this is the aur where your packages are putting beung pullsed from
+- name: 'chaotic-aur'
+repo-url: 'https://cdn-mirror.chaotic.cx/$repo/$arch/'
+
+  #- name: 'yay'  # this didnt work it was sort of a test but didnt work.  
+  #repo-url: 'https://aur.archlinux.org/yay.git' 
