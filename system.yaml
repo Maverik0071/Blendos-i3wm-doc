@@ -46,6 +46,17 @@ packages:  # programs that are put into the system
 - 'dunst'
 - 'brightnessctl'
 - 'neovim'
+- 'gzip'
+- 'pcsc-tools'
+- 'ccid'
+- 'opensc'
+- 'tlp'
+- 'tlp-rdw'
+- 'gvfs'
+- 'npm'
+- 'python'
+- 'hugo'
+
 
 services: # these are what you input in the system:  An exanple would be like when you use "systemctl enable" & "systemctl start".  This is done automatically once its there in your system.
 - 'caddy'
@@ -53,6 +64,10 @@ services: # these are what you input in the system:  An exanple would be like wh
 - 'ly'
 - 'starship'
 - 'flatpak'
+- 'snapd'
+- 'pcscd'
+- 'tlp'
+- 'fancontrol'
 
 packages-repo: # this is the aur where your packages are putting beung pullsed from
 - name: 'chaotic-aur'
